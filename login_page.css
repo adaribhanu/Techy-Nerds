@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    height: 95vh;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: x-large;
+    margin: 15px;
+    color: #0B457F;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.container {
+    display: flex;
+    align-items: center;
+    background: #3F658A;
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 900px;
+    width: 100%;
+    min-height: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.login-student-mentor{
+    display: none;
+}
+.login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    padding: 20px;
+    color: #0B457F;
+    background-color: white;
+    border-radius: 20px;
+    gap:20px;
+}
+.login-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    height: 80%;
+    border-radius: 15px;
+    gap:20px;
+}
+.input-field {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #0B457F;
+    border-radius: 15px;
+    width: 100%;
+    background-color: #0B457F;
+    color: white;
+}
+.input-field::placeholder {
+    color: white;
+    text-align: center;
+}
+.login-btn {
+    background-color: #FF5A4A;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width:40% ;
+}
+.mentor-btn, .google-btn {
+    position: relative;
+    background-color: white;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    font-size: 20px;
+    border-radius: 30px;
+    width: 100%;
+}
+.mentor-btn img, .google-btn img {
+    position: absolute;
+    left: 10px;
+    height: 30px;
+    width: 30px;
+}
+.mentor-btn span, .google-btn span {
+    margin-left: 30px; 
+}
+.login-btn:hover {
+    opacity: 0.9;
+}
+a {
+    color: #FF5A4A;
+    text-decoration: none;
+}
+.vertical-divider {
+    height: 400px;
+    width: 0.5px;
+    background-color: #0f0f0f;
+    margin: 0 20px;
+}
+.horizontal-divider{
+    display: none;
+    width: 80%;
+    height: 0.5px;
+    background-color: #0f0f0f;
+    margin: 20px 0;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        padding: 25px;
+        max-width: 80%;
+        background-color: white;
+    }
+    .login-section, .login-options {
+        width: 80%;
+        text-align: center;
+        padding: 20px;
+    }
+    .vertical-divider {
+        display: none;
+    }
+    .horizontal-divider{
+        display: block;
+    }
+    .login-options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-field{
+        width: 70%;
+    }
+    .google-btn {
+        width: 70%; 
+        font-size: 14px;
+        padding: 8px 15px;
+        background-color: #0B457F;
+        color: white;
+    } 
+    .google-btn img {
+        height: 20px;
+        width: 20px; 
+    }
+    .google-btn span {
+        margin-left: 25px; 
+    }
+    h2{
+        display: none;
+    }
+    .login-student-mentor{
+        display: flex;
+        width: 50%;
+        background-color: #6A97D9;
+        height: 45px;
+        justify-content: space-between;
+        padding: 5px 5px;
+        border-radius: 20px;
+    }
+    .stu-btn,.men-btn{
+        border: none;
+        background-color: #0B457F;
+        height: 35px;
+        width: 50%;
+        border-radius: 20px;
+        font-size: small;
+        color: white;
+        font-weight: 600;
+    }
+    .men-btn{
+        background-color: #6A97D9;
+    }
+    .mentor-btn{display: none;}
+}
+@media (max-width: 480px) {
+    .container{
+        background-color: white;
+        height: 70vh;
+    }
+    h2{
+        display: none;
+    }
+    .login-student-mentor{
+        display: flex;
+        width: 95%;
+        background-color: #6A97D9;
+        height: 45px;
+        justify-content: space-between;
+        padding: 5px 5px;
+        border-radius: 20px;
+    }
+    .stu-btn,.men-btn{
+        border: none;
+        background-color: #0B457F;
+        height: 35px;
+        width: 50%;
+        border-radius: 20px;
+        font-size: small;
+        color: white;
+        font-weight: 600;
+    }
+    .men-btn{
+        background-color: #6A97D9;
+    }
+    .login-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .input-field {
+        padding: 10px;
+        font-size: 14px;
+        height: 50px;
+        width: 250px;
+    }
+    .google-btn {
+        width: 250px; 
+        font-size: 12px;
+        padding: 6px 10px;
+        background-color: #0B457F;
+        color: white;
+        height: 40px;
+    }
+    .google-btn img {
+        height: 18px;
+        width: 18px; 
+    }
+    .google-btn span {
+        margin-left: 20px; 
+    }
+    .mentor-btn{display: none;}
+}
