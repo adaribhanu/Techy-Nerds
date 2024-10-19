@@ -58,6 +58,7 @@ body {
     text-align: center;
     height: 80%;
     border-radius: 15px;
+    color: white;
     gap:20px;
 }
 .input-field {
@@ -91,7 +92,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: #0B457F;
     font-weight: 700;
     padding: 10px 20px;
     border: 2px solid #ccc;
@@ -134,7 +135,8 @@ a {
         flex-direction: column;
         padding: 25px;
         max-width: 80%;
-        background-color: white;
+    background: #3F658A;
+    
     }
     .login-section, .login-options {
         width: 80%;
@@ -159,8 +161,8 @@ a {
         width: 70%; 
         font-size: 14px;
         padding: 8px 15px;
-        background-color: #0B457F;
-        color: white;
+        
+        color: #0B457F;
     } 
     .google-btn img {
         height: 20px;
@@ -198,7 +200,7 @@ a {
 }
 @media (max-width: 480px) {
     .container{
-        background-color: white;
+        background-color: #3F658A;
         height: 70vh;
     }
     h2{

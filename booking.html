@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="booking.css">
+    <style>
+        /* Style for notification */
+        .notification {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0B457F;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+            font-size: 16px;
+        }
+
+        /* Error styling */
+        /* CSS for error message */
+.error {
+    color: red; /* Red color to indicate an error */
+    font-size: 14px; /* Slightly smaller font size */
+    font-weight: bold; /* Make the text bold */
+    margin-top: 10px; /* Space above the error message */
+    padding: 5px; /* Padding inside the error box */
+    background-color: #ffe6e6; /* Light red background for better visibility */
+    border-left: 3px solid red; /* Red border on the left for emphasis */
+    border-radius: 3px; /* Slightly rounded corners */
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assert/logo.jpg" alt="SLIET Logo">
+            <div class="brand">S.L.I.E.T</div>
+        </div>
+        <div class="options">
+            <div class="search-bar">
+                <input type="text" placeholder="Search Here...">
+                <img src="assert/search.png" alt="search icon">
+            </div>
+            <button>Login</button>
+        </div>
+    </nav>
+    <main>
+        <div class="mentor-section">
+            <div class="mentor-card">
+                <div class="men-image">
+                    <img src="./assert/teacher1.jpg" alt="Mentor Image" class="mentor-img">
+                </div>
+                <div class="mentor-info">
+                    <h2>Dr. Birmohan Singh</h2>
+                    <p>Ph.D., M.E.</p>
+                    <p>AI/ML <span class="badge">DSA</span> <span class="badge">C++</span></p>
+                    <div class="rating">
+                        <img src="assert/star.png" alt="rating">
+                        <h3>4.6</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slots-section">
+                <h3>Slots of this mentor :</h3>
+                <div class="slots">
+                    <div class="slot available">
+                        <div class="calendar-container">
+                            <label for="date">Select a Date:</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="time-container">
+                            <label for="time">Select a Time:</label>
+                            <input type="time" id="time" name="time">
+                        </div>
+                        <div class="confirm-btn">
+                            <p><span class="seats">42 seat available</span></p>
+                            <button>Book a Session</button>
+                        </div>
+                    </div>
+                    <div class="slot limited">
+                        <div class="calendar-container">
+                            <label for="date">Select a Date:</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="time-container">
+                            <label for="time">Select a Time:</label>
+                            <input type="time" id="time" name="time">
+                        </div>
+                        <div class="confirm-btn">
+                            <p><span class="seats">2 seat available</span></p>
+                            <button>Book a Session</button>
+                        </div>
+                    </div>
+                    <div class="slot full">
+                        <div class="calendar-container">
+                            <label for="date">Select a Date:</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="time-container">
+                            <label for="time">Select a Time:</label>
+                            <input type="time" id="time" name="time">
+                        </div>
+                        <div class="confirm-btn">
+                            <p><span class="seats">0 seat available</span></p>
+                            <button>Book a Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-confirm">
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <button class="confirm-booking">Confirm Booking</button>
+                    <div id="error-message" class="error"></div>
+                </div>
+                <div class="mentor-about">
+                    <h3>About Mentor :</h3>
+                    <textarea placeholder="About Mentor"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="reviews-section">
+            <div class="review">
+                <h3>Reviews :</h3>
+                <textarea placeholder="Add your review...."></textarea>
+            </div>
+            <div class="post-btn">
+                <button class="post-review">Post</button>
+            </div>
+        </div>
+    </main>
+    <div id="error-message" style="display: none; color: red; margin-top: 10px;">
+
+    </div>
+    <div id="notification" style="display: none; position: fixed; bottom: 10px; right: 10px; background-color: #0B457F; color: white; padding: 10px; border-radius: 5px;">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
